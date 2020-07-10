@@ -1,5 +1,5 @@
-import SVGO from 'svgo';
-import { compile } from '@vue/compiler-dom';
+const SVGO = require('svgo');
+const { compile } = require('@vue/compiler-dom');
 
 const transformChildren = (value) => {
   const chilldren = value.reduce((acc, child) => {
@@ -48,7 +48,7 @@ const transformChildren = (value) => {
 
 const stringify = (value) => value.filter((item) => item).join();
 
-export default (content, options = {}) => {
+module.exports = (content, options = {}) => {
   const {
     svgoConfig = {},
     svgoPath = null,
