@@ -12,6 +12,7 @@
   "license": "MIT",
   "author": "Damian Stasik <npm@coded.pl>",
   "main": "index.js",
+  "type": "module",
   "dependencies": {
     "svgo": "^1.3.2"
   },
